@@ -1,0 +1,16 @@
+{
+	"name": "@timqian/npm-package-template",
+	"version": "0.0.0",
+	"description": "A dead-simple template to write and publish npm packages",
+	"license": "MIT",
+	"repository": "timqian/npm-package-template",
+	"author": "timqian",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"template",
+		"npm",
+		"package"
+	]
+}
