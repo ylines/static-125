@@ -1,0 +1,144 @@
+/******* Variables */
+:root {
+  --ease: cubic-bezier(.82, 0, .12, 1);
+  --width: 800px;
+  --header-height: 400px;
+
+  --black: #1a202c;
+  --dark: #2d3748;
+  --blue: #33A9FF;
+  --light-gray: #fafafa;
+
+  --bg: #fff;
+  --fg: #868E96;
+  --fg-dark: #212529;
+  --grape: #5f3dc4;
+
+  --selection-bg: var(--blue);
+  --selection-fg: white;
+}
+
+/** Common styles */
+body {
+  margin: 0 auto;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+.padding {
+  padding: 0 1rem;
+}
+
+.date {
+  font-size: small;
+  color: #888;
+  text-align: right;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-weight: 600;
+}
+
+.header-container {
+  width: 100%;
+  max-width: var(--width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 1em;
+}
+
+.header-container .ico-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.header-container .ico-title img {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.header-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-container .follow-btn {
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.hero {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 8.8rem 0 7rem 0;
+  background-image: radial-gradient(circle at 50% -75%, #1a202c, #1a202c 50%, #2d3748 0%, #1a202c 55%);
+  background-position: 0 0, 25px 25px;
+  background-size: 80px 80px;
+  background-attachment: fixed;
+  /* background-image: radial-gradient(#4a5568 1px, transparent 1px), radial-gradient(#4a5568 1px, transparent 1px);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px; */
+}
+
+.hero h1 {
+  max-width: var(--width);
+  font-weight: 500;
+  font-size: 3rem;
+  color: white;
+  margin: 0 1rem;
+}
+
+.content-container {
+  margin-top: 2rem;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container .content {
+  width: 100%;
+  max-width: var(--width);
+  margin: 0 1rem;
+}
+
+
+
+/******* Styles for index.html*/
+
+.index-post-wrapper {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.index-post-title {
+  text-decoration: none;
+  font-weight: bolder;
+  display: block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.index-post-title:hover {
+  text-decoration: underline;
+}
+

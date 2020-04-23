@@ -1,16 +1,22 @@
 {
-	"name": "@timqian/npm-package-template",
+	"name": "@ylines/static",
 	"version": "0.0.0",
-	"description": "A dead-simple template to write and publish npm packages",
+	"description": "A dead-simple static blog generator",
 	"license": "MIT",
-	"repository": "timqian/npm-package-template",
+	"repository": "ylines/static",
 	"author": "timqian",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
-		"template",
-		"npm",
-		"package"
-	]
+		"blog",
+		"generator",
+		"ylines"
+	],
+	"dependencies": {
+		"copy-dir": "^1.2.0",
+		"feed": "^4.1.0",
+		"markdown-it": "^10.0.0",
+		"minimist": "^1.2.5"
+	}
 }
