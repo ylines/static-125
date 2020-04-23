@@ -55,6 +55,7 @@ const allPosts = blogPaths.map(mdFileName => {
     .replace('{{createdDate}}', date)
     .replace('{{author}}', author)
     .replace('{{content}}', blogHTML)
+    .replace('{{feedsPubLink}}', `https://feeds.pub/feed/${encodeURIComponent(baseURL)}%2Frss.xml`)
 
   const htmlFileName = mdFileName.replace('.md', '.html');
   const destFilePath = path.join(destPath, htmlFileName);
@@ -93,7 +94,8 @@ const postListHtml = allPosts.map(post => {
 
 const resIndexHTML = indexWrapper
   .replace(/{{title}}/g, title)
-  .replace('{{blogList}}', postListHtml);
+  .replace('{{blogList}}', postListHtml)
+  .replace('{{feedsPubLink}}', `https://feeds.pub/feed/${encodeURIComponent(baseURL)}%2Frss.xml`)
 
 const destFilePath = path.join(destPath, 'index.html');
 fs.writeFileSync(destFilePath, resIndexHTML);
