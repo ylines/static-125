@@ -1,5 +1,9 @@
 # static-125
 
+## Introduction
+
+English | [中文](https://cn.ylines.org/static-y.html)
+
 ## Usage
 
 ```bash
