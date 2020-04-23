@@ -28,7 +28,6 @@ const destAssetsPath = path.join(destPath, 'assets/');
 copyDir.sync(assetsPath, destAssetsPath);
 
 const postWrapper = fs.readFileSync(postWrapperPath, 'utf-8');
-
 const blogPaths = fs.readdirSync(fromPath);
 
 // generate posts and return posts info
@@ -75,7 +74,6 @@ const allPosts = blogPaths.map(mdFileName => {
 
 // Generate index.html
 const indexWrapper = fs.readFileSync(indexWrapperPath, 'utf-8');
-
 const postListHtml = allPosts.map(post => {
   const {
     htmlFileName,
