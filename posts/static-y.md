@@ -4,7 +4,7 @@ date: 2020-04-23
 author: timqian
 ---
 
-> 这篇文章涉及到的所有代码开源在 [GitHub](https://github.com/ylines/static-y). 假设读者知道什么是 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 格式, 对 [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp) 和 [JavaScript](https://www.w3schools.com/js/default.asp) 有一些了解.
+> 这篇文章涉及到的所有代码开源在 [GitHub](https://github.com/ylines/static-125). 假设读者知道什么是 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 格式, 对 [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp) 和 [JavaScript](https://www.w3schools.com/js/default.asp) 有一些了解
 
 ## 简介
 
@@ -60,7 +60,8 @@ author: timqian
  ┃ ┗ 📜post.html                  // 用于生成博文, 通过塞入博文标题, 内容, 时间, 作者等
 ```
 
-### 实现
+### 实现 (最新代码见 [GitHub](https://github.com/ylines/static-125))
+
 <details>
 <summary>1. 从 markdown 生成文章页面</summary>
 
@@ -203,4 +204,3 @@ const destRSSPath = path.join(destPath, 'rss.xml');
 fs.writeFileSync(destRSSPath, RSSXML);
 ```
 </details>
-
