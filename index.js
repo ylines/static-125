@@ -28,7 +28,7 @@ const destAssetsPath = path.join(destPath, 'assets/');
 copyDir.sync(assetsPath, destAssetsPath);
 
 const postWrapper = fs.readFileSync(postWrapperPath, 'utf-8');
-const blogPaths = fs.readdirSync(fromPath);
+const blogPaths = fs.readdirSync(fromPath).filter(x=>{return x !== '.DS_Store';});
 
 // generate posts and return posts info
 const allPosts = blogPaths.map(mdFileName => {
